@@ -2,10 +2,17 @@
 #parse("XML Header.xml")
 <project name="Project Name" default="all" basedir=".">
 
+    <property name="build" value="build"/>
+    <property name="dist" value="dist"/>
+
     <target name="init" description="Init">
+        <mkdir dir="${build}"/>
+        <mkdir dir="${dist}"/>
     </target>
     
     <target name="clean" description="Clean">
+        <delete dir="${build}"/>
+        <delete dir="${dist}"/>
     </target>
     
     <target name="build" description="Build" depends="init">
