@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+#parse("XML Header.xml")
+<project name="Project Name" default="all" basedir=".">
+
+    <target name="init" description="Init">
+    </target>
+    
+    <target name="clean" description="Clean">
+    </target>
+    
+    <target name="build" description="Build" depends="init">
+    </target>
+    
+    <target name="dist" description="Distribution" depends="build">
+    </target>
+    
+    <target name="all" description="All" depends="clean,dist"/>
+
+</project>
