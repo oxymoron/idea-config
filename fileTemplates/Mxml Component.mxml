@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+#parse("XML Header.xml")
+<mx:${Parent_component} xmlns:mx="http://www.adobe.com/2006/mxml">
+</mx:${Parent_component}>
